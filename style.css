@@ -1,0 +1,75 @@
+/* ----------- GLOBALA STILAR --------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ----------- WRAPPER --------------- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr auto;
+    min-height: 100vh;
+}
+
+/* ----------- HEADER OCH NAV --------------- */
+
+header {
+    background: rgb(35, 35, 35);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2rem;
+    margin: 0;
+}
+
+.navlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+
+    outline: 1px solid black;
+}
+
+.navlink {
+    padding: 1rem;
+    background: gray;
+    display: block;
+    border-right: 1px solid black;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navlink:hover {
+    background: rgb(253, 106, 2);
+}
+
+.search {
+    outline: 1px solid black;
+}
+
+/* ----------- CONTENT --------------- */
+
+.content {
+    background: rgb(29, 29, 29);
+}
+
+/* ----------- FOOTER --------------- */
+
+footer {
+    background: rgb(35, 35, 35);
+    color: rgb(253, 106, 2);
+    outline-color: 1px solid black;
+}
+
+/* ----------- CONTENT - START --------------- */
+/* ----------- CONTENT - MALE --------------- */
+/* ----------- CONTENT - FEMALE --------------- */
+/* ----------- CONTENT - CHILDREN --------------- */
