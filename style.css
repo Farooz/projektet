@@ -18,7 +18,7 @@ body {
 /* ----------- HEADER OCH NAV --------------- */
 
 header {
-    background: rgb(35, 35, 35);
+    background: rgb(41, 41, 41);
 
     display: flex;
     justify-content: space-between;
@@ -40,15 +40,16 @@ header {
 
 .navlink {
     padding: 1rem;
-    background: gray;
+    background: rgb(27, 27, 27);
     display: block;
     border-right: 1px solid black;
     text-decoration: none;
-    color: whitesmoke;
+    color:rgb(253, 106, 2);
 }
 
 .navlink:hover {
     background: rgb(253, 106, 2);
+    color: black;
 }
 
 .search {
@@ -58,7 +59,7 @@ header {
 /* ----------- CONTENT --------------- */
 
 .content {
-    background: rgb(29, 29, 29);
+    background: rgb(27, 27, 27);
 }
 
 /* ----------- FOOTER --------------- */
