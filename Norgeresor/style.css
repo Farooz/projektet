@@ -1,0 +1,263 @@
+/* --------- GLOBALA STILAR --------- */
+:root {
+    --red: #eb3b5a;
+    --blue: #2d98da;
+    --lightblue:#45aaf2;
+    --offwhite: #f8f8ff;
+    --white: #fff;
+    --black: #000;
+    --font-logo: 'Righteous', cursive;
+    --font-headline: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    --font-text: serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--offwhite);
+    background: url('https://swewebb.github.io/resurser/norge/bg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    backdrop-filter: blur(1rem);
+
+    font-family: var(--font-text);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+}
+.button {
+    display: block;
+    background-color: var(--blue);
+    border-radius: 0.25rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.button:hover {
+    background-color: var(--lightblue);
+}
+/* --------- WRAPPER --------- */
+.wrapper {        
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto) 1fr auto;
+
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background-color: var(--white);
+}
+
+/* --------- HEADER OCH NAV --------- */
+header {
+    /*background-color: var(--red);*/
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    padding: 0 2rem;
+}
+.logo {
+    font-family: var(--font-logo);
+    font-size: 5rem;
+    align-self: center;
+
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    color: var(--red);
+}
+.logo a {
+    color: var(--red);
+    text-decoration: none;
+}
+header nav {
+    align-self: center;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+header li {
+    padding: 0 0.5rem;
+}
+header ul a {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+/* --------- CONTENT --------- */
+.content {
+    padding: 1rem 2rem 0 2rem;
+}
+
+/* --------- FOOTER --------- */
+footer {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* --------- START --------- */
+
+/* --------- EN HELG I OSLO --------- */
+.destination {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 1fr;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+.destination__image {
+    width: 100%;
+    border-radius: 1rem;
+}
+.destination__header {
+    margin: 0;
+    color: var(--red);
+    font-size: 3rem;
+}
+.destination__blurb {
+    margin: 0;
+    color: var(--red);
+}
+.destination__holder {
+    display: flex;
+    flex-direction: column;
+}
+.destination__info{
+    font-size: 1.1rem;
+}
+.destination__price {
+    align-self: flex-end;
+    animation-name: pricetag;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: orange;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 2.5rem;
+    min-width: 150px;
+    padding: 0.5rem;
+    transform: rotate(-3deg);
+    text-align: center;
+    text-decoration: none;
+}
+@keyframes pricetag {
+  0%   {transform: rotate(-3deg);}
+  50%  {transform: rotate(3deg);}
+  100% {transform: rotate(-3deg);}
+}
+/* --------- LILLA RESAN --------- */
+.small-tripp__header {
+    margin: 0;
+    color: var(--red);
+    font-style: 3rem;
+}
+
+/*h1an Lilla resan ville inte bli större som den ska så jag gjorde den större här*/
+h1 {
+    font-size: 3rem;
+}
+
+.small-tripp__blurb {
+    margin: 0;
+    color: var(--red);
+}
+.small-tripp > h2 {
+    color: var(--red);
+}
+.small-tripp p, ul {
+    font-size: 1.1rem;
+}
+.small-tripp__side {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.small-tripp__img {
+    min-width: 100%;
+    justify-self: center;
+    border-radius: 1rem;
+}
+.small-tripp__info {
+    max-width: 100%;
+    background: var(--lightblue);
+    padding: 1rem;
+    color: var(--white);
+    border-radius: 1rem;
+}
+.small-tripp__info {
+    margin: 0;
+}
+/* --------- STORA RESAN --------- */
+.large-trip {
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.large-trip__header {
+    margin: 0;
+    color: var(--red);
+    font-size: 3rem;
+}
+.large-trip__blurb {
+    margin: 0;
+    color: var(--red);
+}
+.large-trip__price {
+    animation-name: pricetag;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: orange;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 2.5rem;
+    max-width: 150px;
+    padding: 0.5rem;
+    transform: rotate(-3deg);
+    text-align: center;
+    text-decoration: none;
+    justify-content: end;
+    margin-top: 0.5rem;
+}
+.large-trip details {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: var(--font-headline);
+}
+.large-trip summary {
+    font-size: 2rem;
+    color: var(--red);
+    cursor: pointer;
+}
+.large-trip details p {
+    font-family: var(--font-text);
+}
+.large-trip__pics {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.large-trip__pics img {
+    justify-self: center;
+    width: 100%;
+    border-radius: 1rem;
+}
+.large-trip__info {
+    background: var(--lightblue);
+    padding: 1rem;
+    margin: 1rem 0;
+    color: var(--white);
+    border-radius: 1rem;
+}
+.destination__info h2 {
+    margin: 0;
+}
+/* --------- OM OSS --------- */
